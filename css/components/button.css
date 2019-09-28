@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+
+.ui.button {
+    outline: none;
+    color: #FFFFFF;
+    cursor:pointer;
+    display:inline-block;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding:0px 21px;
+    border: 3px solid rgb(255,255,255, 0.8);
+}
+
+.ui.inverted.button {
+    color: #1b1c1d;
+    border: 3px solid rgb(0,0,0, 0.3);
+}
+
+.ui.round.button {
+    border-radius: 50px;
+}
+
+.ui.button:hover {
+    border: 3px solid rgb(255,255,0, 0.8);
+}
+
+.ui.button:active {
+    border: 3px solid rgb(0,255,0, 0.8);
+}
+
+.ui.active.button {
+    border: 3px solid rgb(0,255,0, 0.8);
+}
+.ui.active.button:active {
+    border: 3px solid rgb(0,255,0, 0.8);
+}
+
+.ui.error.button {
+    border: 3px solid rgb(255,0,0, 0.8);
+}

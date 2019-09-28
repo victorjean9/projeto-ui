@@ -1,0 +1,11 @@
+.div-acrilico {
+    background-image: url(../img/colorful.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    padding: 100px;
+}
+.acrylic {
+    height: 400px;
+}
