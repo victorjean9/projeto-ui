@@ -10,14 +10,24 @@
 
         <link rel="stylesheet" href="css/components/semantic-ui/container.css"/>
         <link rel="stylesheet" href="css/components/semantic-ui/grid.css"/>
+        <link rel="stylesheet" href="css/components/semantic-ui/transition.css"/>
+        <link rel="stylesheet" href="css/components/semantic-ui/dimmer.css"/>
+        <link rel="stylesheet" href="css/components/semantic-ui/icon.css"/>
         <link rel="stylesheet" href="css/components/colors.css"/>
         <link rel="stylesheet" href="css/components/header.css"/>
         <link rel="stylesheet" href="css/components/button.css"/>
         <link rel="stylesheet" href="css/components/acrylic.css"/>
+        <link rel="stylesheet" href="css/components/modal.css"/>
         <link rel="stylesheet" href="css/style.css"/>
+
+        <script type="text/javascript" src="js/components/semantic-ui/transition.js"></script>
+        <script type="text/javascript" src="js/components/semantic-ui/dimmer.js"></script>
+        <script type="text/javascript" src="js/components/modal.js"></script>
         <script language="javascript">
 			$(document).ready(function(){
-
+                $("#btn_modal1").click(function(){
+                    $("#modal1").modal('show');
+                });
 			});
 		</script>
         <style>
@@ -71,6 +81,31 @@
                     Esta é uma div em acrílico.<br/>
                     Será muito utilizada em Janelas Modais! <br/>
                 </div>
+            </div>
+            <h2>Janelas Modais:</h2>
+            <button id="btn_modal1" class="ui blue button">Abrir Modal</button>
+        </div>
+
+
+        <div id="modal1" class="ui tiny inverted modal">
+            <i class="close icon"></i>
+            <div class="header">
+                Profile Picture
+            </div>
+            <div class="content">
+                <p>
+                    Testando tudo aqui dentro da modal. <br/>
+                    Espero que funcione tudo do jeito certo. <br/>
+                    E que nao bugue nada.
+                </p>
+            </div>
+            <div class="actions">
+                <button class="ui black button">
+                    Nope
+                </button>
+                <button class="ui green button">
+                    Yep, that's me
+                </button>
             </div>
         </div>
     </body>
